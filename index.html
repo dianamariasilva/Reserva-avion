@@ -5,8 +5,6 @@
 	<title>Reserva de asientos</title>
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body background="img/fondoazul.jpg">
@@ -141,7 +139,8 @@
 					<input type="text" placeholder="73590444" id="buscarDni">
 					<button type="text" onclick="buscar()">Buscar</button>
 				</p>
-				<table>
+				<form>
+					<input type="text"id="asiento" disabled>
 					Nombre: <label for="name" class="sr-only">
 						Nombre
 					</label>
@@ -158,20 +157,22 @@
 					</label>
 					<input type="text" id="dni" class="form-control" placeholder="78940333" autofocus="">
 					<br> <br>
-					<button type="text" onclick="reservar()">Reservar</button>
-					<button type="text" onclick="cancelar()">Cancelar</button>
-				</table>
+					<button type="button" id="reservar">Reservar</button>
+					<button type="button" id="cancelar">Cancelar</button>
+				</form>
 			</div>	
 		</div>
-		<button type="text" onclick="listar()">Listar</button>
+		<button type="text" id="listar">Listar</button>
 		<div id = "records" style="margin-top: 25px"></div>
-		<div id="show">
+		<div id="mostrar">
 		</div>
-		<div id="show2">
+		<div id="mostrar2">
 		</div>
-		<div id="show3">
+		<div id="mostrar3">
 		</div>
 	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script  type='text/javascript' src='js/js.js'></script>
 </body>
 </html>
