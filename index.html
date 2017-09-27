@@ -19,7 +19,8 @@
                 <div class="line">
                 </div>
 				<table class="egt text-center table table-hover">
-						<tbody><tr>
+						<tbody>
+							<tr>
 		
 								<td class="celdita" id="4" onclick="" width="20"> 
 								<center>4</center>
@@ -135,15 +136,20 @@
 							</td>
 						</tr>
 					</tbody></table>
+					<div class="box1 text-center">
+						<img src="img/asiento.png" style="width:100%">
+						<div class="caption">
+							<input type="text" id="seat" class="text-center seat" disabled="">
+						</div>
+					</div>
 			</div>
 			<div class="col-lg-6 text-center background2">
                 <p>
                     DNI: 
-                    <input type="text" placeholder="73590444" id="buscarDni">
-                    <button type="text" onclick="search()">Buscar</button>
+					<input type="text" placeholder="73590444" id="buscarDni">
+					<div class="col-md-12"> <a href="#" class="btn btn-sm animated-button sandy-one" id="search">Buscar</a> </div>
                 </p>
                 <form>
-                    <input type="text" id="seat" disabled="">
                     Nombre: <label for="name" class="sr-only">
                         Nombre
                     </label>
@@ -159,13 +165,13 @@
                         DNI
                     </label>
                     <input type="text" id="dni" class="form-control" placeholder="78940333" autofocus="">
-                    <br> <br>
-                    <button type="button" id="reserve">Reservar</button>
-                    <button type="button" id="cancel">Cancelar</button>
+					<br> <br>
+					<div class="col-md-3 col-sm-3 col-xs-6"> <a href="#" class="btn btn-sm animated-button sandy-one" id="reserve">Reservar</a> </div>
+					<div class="col-md-3 col-sm-3 col-xs-6"> <a href="#" class="btn btn-sm animated-button sandy-one" id="cancel">Cancelar</a> </div>
+					<div class="col-md-3 col-sm-3 col-xs-6"> <a href="#" class="btn btn-sm animated-button sandy-one" id="toList">Listar</a> </div>
                 </form>
             </div>
 		</div>
-		<button type="text" id="toList">Listar</button>
 		<div id = "records" style="margin-top: 25px"></div>
 		<div id="show">
 		</div>
