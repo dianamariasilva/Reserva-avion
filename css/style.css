@@ -1,13 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Bowlby+One|Lobster');
 
 table, tr, td {
-    border: 4px solid black;
-    padding: 5px;
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
 }
 table {
     border-spacing: 15px;
 }
 
+tr, td {
+    background-color: lightblue;
+    margin-bottom: 15px;
+    border-radius: 86px;
+    border-width: 0px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-image: initial;
+}
 /* .background2{
     background-image: url(../img/sobre.png);
     background-size: cover;
@@ -28,4 +39,5 @@ h1{
 h2{
     font-family: 'Lobster', cursive;
 }
+
 
