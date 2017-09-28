@@ -2,6 +2,7 @@
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 @import url('https://fonts.googleapis.com/css?family=Anton|Poppins');
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One|Lobster|Oxygen');
 
 *{
     font-family: 'Anton', sans-serif;
@@ -32,6 +33,7 @@ a.animated-button:link, a.animated-button:visited {
 	-o-transition: all 1s ease;
 	transition: all 1s ease;
 }
+
 a.animated-button:link:after, a.animated-button:visited:after {
 	content: "";
 	position: absolute;
@@ -45,13 +47,16 @@ a.animated-button:link:after, a.animated-button:visited:after {
 	-o-transition: all 0.75s ease 0s;
 	transition: all 0.75s ease 0s;
 }
+
 a.animated-button:link:hover, a.animated-button:visited:hover {
 	color: #212152;
 	text-shadow: none;
 }
+
 a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
 	height: 450%;
 }
+
 a.animated-button:link, a.animated-button:visited {
 	position: relative;
 	display: block;
@@ -162,4 +167,18 @@ header{
 .background2{
     background-color: rgba(20, 110, 133, 0.35);
     padding: 30px;
+}
+
+.div1{
+    margin-top: 10px;
+    background: rgba(105, 105, 153, 0.5);
+    margin-left: 40px;
+}
+
+.seat{
+    color: #2A2A4B;
+}
+
+h4{
+    font-family: 'Oxygen', sans-serif;
 }
